@@ -1,0 +1,157 @@
+header img {
+    width: 100%;
+}
+
+header {
+    background-color: rgb(13, 56, 126);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+table.menu {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table.menu a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+table.menu a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+table.menu a:hover {
+    color: rgb(225, 165, 65);
+}
+
+body {
+    background-image: url(../img/fondo-morado.png);
+    background-size: auto;
+    background-repeat: repeat;
+    margin: 0;
+    padding-top: 30vw;
+}
+
+div h1 {
+    color: white;
+}
+
+div h3 {
+    color: white;
+}
+
+.trofeo {
+    height: 50px;
+}
+
+.recuadro {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 215, 0, 0.5); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.recuadro-modo {
+    background-color: rgba(13, 56, 126, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 215, 0, 0.5); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.modo {
+    color: rgb(255, 215, 0);
+}
+
+#inicio {
+    background-image: url(../img/fondo-azul.png);
+}
+
+.img-inicio {
+    border-radius: 10px;
+    border: 3px solid rgba(255, 215, 0, 0.5); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    background-color: rgb(13, 56, 126);
+    width: 20%;
+}
+
+#primero {
+    width: 50%;
+}
+
+div {
+    width: 100%;
+    text-align: center;
+}
+
+.izq {
+    float: left;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+
+#titulo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 1em;
+    
+}
+
+#banner {
+    position: relative;
+
+}
+
+@media (max-width: 768px) {
+    .izq {
+        float: none;
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 15px;
+    }
+    
+    .img-inicio {
+        width: 20% !important;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #primero {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-inicio {
+        width: 40% !important;
+    }
+    
+    #primero {
+        width: 90% !important;
+    }
+    
+    .recuadro {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
