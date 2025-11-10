@@ -44,7 +44,15 @@ div h1 {
     color: white;
 }
 
+div h2 {
+    color: white;
+}
+
 div h3 {
+    color: white;
+}
+
+div p {
     color: white;
 }
 
@@ -140,6 +148,77 @@ footer a:hover {
 
 #banner {
     position: relative; 
+}
+
+.redes-sociales {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.redes-sociales:hover {
+    transform: translateY(-8px) scale(1.1);
+}
+
+.redes-sociales img {
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease;
+}
+
+/* Instagram */
+.redes-sociales:nth-child(1):hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0 10px 30px rgba(225, 48, 108, 0.6);
+    border-color: #e1306c;
+}
+
+/* Twitter */
+.redes-sociales:nth-child(2):hover {
+    background: #1DA1F2;
+    box-shadow: 0 10px 30px rgba(29, 161, 242, 0.6);
+    border-color: #1DA1F2;
+}
+
+/* Facebook */
+.redes-sociales:nth-child(3):hover {
+    background: #1877F2;
+    box-shadow: 0 10px 30px rgba(24, 119, 242, 0.6);
+    border-color: #1877F2;
+}
+
+/* TikTok */
+.redes-sociales:nth-child(4):hover {
+    background: #000000;
+    box-shadow: 0 10px 30px rgba(105, 255, 255, 0.6);
+    border-color: #69FFFF;
+}
+
+/* YouTube */
+.redes-sociales:nth-child(5):hover {
+    background: #FF0000;
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.6);
+    border-color: #FF0000;
+}
+
+/* Discord */
+.redes-sociales:nth-child(6):hover {
+    background: #5865F2;
+    box-shadow: 0 10px 30px rgba(88, 101, 242, 0.6);
+    border-color: #5865F2;
+}
+
+/* Reddit */
+.redes-sociales:nth-child(7):hover {
+    background: #FF4500;
+    box-shadow: 0 10px 30px rgba(255, 69, 0, 0.6);
+    border-color: #FF4500;
 }
 
 @media (max-width: 768px) {
