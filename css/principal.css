@@ -37,6 +37,7 @@ body {
     background-repeat: repeat;
     margin: 0;
     padding-top: 30vw;
+    display: flexbox;
 }
 
 div h1 {
@@ -105,6 +106,27 @@ div {
     align-items: center;
     justify-content: center;
     min-height: 150px;
+}
+
+footer {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    bottom: 0;
+    padding: 20px;
+}
+
+footer a:link {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(225, 165, 65);
 }
 
 #titulo {
