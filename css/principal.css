@@ -37,7 +37,9 @@ body {
     background-repeat: repeat;
     margin: 0;
     padding-top: 30vw;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 div h1 {
@@ -117,10 +119,9 @@ div {
 }
 
 footer {
-    position: relative;
     background-color: rgba(0, 0, 0, 0.9);
-    bottom: 0;
     padding: 20px;
+    margin-top: auto;
 }
 
 footer a:link {
