@@ -4,26 +4,6 @@
     font-weight: bold;
 }
 
-@keyframes brilloAmarillo {
-    0%, 100% {
-        text-shadow: 
-            0 0 5px rgba(255, 255, 0, 0.8),
-            0 0 10px rgba(255, 255, 0, 0.6),
-            0 0 15px rgba(255, 215, 0, 0.4),
-            0 0 20px rgba(255, 215, 0, 0.2);
-        color: rgb(255, 215, 0);
-    }
-    50% {
-        text-shadow: 
-            0 0 10px rgba(255, 255, 0, 1),
-            0 0 20px rgba(255, 255, 0, 0.8),
-            0 0 30px rgba(255, 215, 0, 0.6),
-            0 0 40px rgba(255, 215, 0, 0.4),
-            0 0 50px rgba(255, 215, 0, 0.2);
-        color: rgb(255, 255, 0);
-    }
-}
-
 .legendaria {
 background: linear-gradient(90deg, 
         rgb(255, 0, 0),     
@@ -43,25 +23,16 @@ background: linear-gradient(90deg,
     font-weight: bold;
 }
 
-@keyframes moveColor {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 400% 50%;
-    }
-}
-
 .epica {
-    color: purple;
+    color: rgb(128, 0, 128);
 }
 
 .especial {
-    color: orange;
+    color: rgb(255, 165, 0);
 }
 
 .comun {
-    color: lightblue;
+    color: rgb(173, 216, 230);
 }
 
 .img-tac {
@@ -105,7 +76,9 @@ background: linear-gradient(90deg,
 }
 
 .front,
-.back {
+.back,
+.back-evo,
+.back-torre{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -132,13 +105,110 @@ background: linear-gradient(90deg,
 }
 
 .back {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(100, 36, 163) 100%);
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
+}
+
+.back-torre {
+    background: linear-gradient(135deg, 
+        rgb(139, 0, 0) 0%,
+        rgb(220, 20, 60) 25%,
+        rgb(255, 69, 0) 50%,
+        rgb(255, 215, 0) 75%,
+        rgb(255, 165, 0) 100%
+    );
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.6), 
+                inset 0 0 15px rgba(255, 215, 0, 0.3);
+    border: 2px solid rgb(255, 215, 0);
+}
+
+.back-evo {
+    background: linear-gradient(135deg, rgb(26, 10, 46) 0%, rgb(45, 27, 78) 100%);
+    transform: rotateY(540deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.torre {
+    color: rgb(255, 215, 0);
+    animation: brilloRojo 2.5s ease-in-out infinite;
+    font-weight: bold;
+    text-shadow: 
+        0 0 8px rgba(255, 165, 0, 0.8),
+        0 0 15px rgba(255, 165, 0, 0.6);
+}
+
+.evo {
+    color: rgb(100, 33, 209);
+    animation: brilloEvo 3s ease-in-out infinite;
+    font-weight: bold;
+}
+
+@keyframes brilloAmarillo {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px rgba(255, 255, 0, 0.8),
+            0 0 10px rgba(255, 255, 0, 0.6),
+            0 0 15px rgba(255, 215, 0, 0.4),
+            0 0 20px rgba(255, 215, 0, 0.2);
+        color: rgb(255, 215, 0);
+    }
+    50% {
+        text-shadow: 
+            0 0 10px rgba(255, 255, 0, 1),
+            0 0 20px rgba(255, 255, 0, 0.8),
+            0 0 30px rgba(255, 215, 0, 0.6),
+            0 0 40px rgba(255, 215, 0, 0.4),
+            0 0 50px rgba(255, 215, 0, 0.2);
+        color: rgb(255, 255, 0);
+    }
+}
+
+@keyframes moveColor {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 400% 50%;
+    }
+}
+
+@keyframes brilloEvo {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px rgba(100, 33, 209, 0.8),
+            0 0 10px rgba(100, 33, 209, 0.6),
+            0 0 15px rgba(215, 86, 230, 0.4),
+            0 0 20px rgba(215, 86, 230, 0.2);
+        color: rgb(100, 33, 209);
+    }
+    50% {
+        text-shadow: 
+            0 0 10px rgba(100, 33, 209, 1),
+            0 0 20px rgba(100, 33, 209, 0.8),
+            0 0 30px rgba(215, 86, 230, 0.6),
+            0 0 40px rgba(215, 86, 230, 0.4),
+            0 0 50px rgba(255, 233, 255, 0.2);
+        color: rgb(215, 86, 230);
+    }
 }

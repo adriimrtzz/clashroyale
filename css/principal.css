@@ -42,20 +42,11 @@ body {
     min-height: 100vh;
 }
 
-div h1 {
-    color: white;
-}
-
-div h2 {
-    color: white;
-}
-
-div h3 {
-    color: white;
-}
-
+div h1,
+div h2,
+div h3,
 div p {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .trofeo {
@@ -126,7 +117,7 @@ footer {
 
 footer a:link {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 footer a:visited {
@@ -138,13 +129,36 @@ footer a:hover {
     color: rgb(225, 165, 65);
 }
 
+
 #titulo {
+    background: linear-gradient(90deg, 
+        rgb(255, 107, 53),
+        rgb(247, 147, 30),
+        rgb(253, 200, 48),
+        rgb(243, 115, 53),
+        rgb(255, 107, 53)
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: tituloGradiente 4s ease-in-out infinite;
+    font-weight: bold;
+    font-size: clamp(2em, 5vw, 3.5em);
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 20px 10px;
+    text-transform: uppercase;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    top: 1em;
-    color: #662ea6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    z-index: 10;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5))
+            drop-shadow(0 0 20px rgba(255, 107, 53, 0.8))
+            drop-shadow(0 0 30px rgba(253, 200, 48, 0.5));
 }
 
 #banner {
@@ -175,51 +189,60 @@ footer a:hover {
 
 /* Instagram */
 .redes-sociales:nth-child(1):hover {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, rgb(253, 244, 151) 0%, rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214, 36, 159) 60%, rgb(40, 90, 235) 90%);
     box-shadow: 0 10px 30px rgba(225, 48, 108, 0.6);
-    border-color: #e1306c;
+    border-color: rgb(225, 48, 108);
 }
 
 /* Twitter */
 .redes-sociales:nth-child(2):hover {
-    background: #1DA1F2;
+    background: rgb(29, 161, 242);
     box-shadow: 0 10px 30px rgba(29, 161, 242, 0.6);
-    border-color: #1DA1F2;
+    border-color: rgb(29, 161, 242);
 }
 
 /* Facebook */
 .redes-sociales:nth-child(3):hover {
-    background: #1877F2;
+    background: rgb(24, 119, 242);
     box-shadow: 0 10px 30px rgba(24, 119, 242, 0.6);
-    border-color: #1877F2;
+    border-color: rgb(24, 119, 242);
 }
 
 /* TikTok */
 .redes-sociales:nth-child(4):hover {
-    background: #000000;
+    background: rgb(0, 0, 0);
     box-shadow: 0 10px 30px rgba(105, 255, 255, 0.6);
-    border-color: #69FFFF;
+    border-color: rgb(105, 255, 255);
 }
 
 /* YouTube */
 .redes-sociales:nth-child(5):hover {
-    background: #FF0000;
+    background: rgb(255, 0, 0);
     box-shadow: 0 10px 30px rgba(255, 0, 0, 0.6);
-    border-color: #FF0000;
+    border-color: rgb(255, 0, 0);
 }
 
 /* Discord */
 .redes-sociales:nth-child(6):hover {
-    background: #5865F2;
+    background: rgb(88, 101, 242);
     box-shadow: 0 10px 30px rgba(88, 101, 242, 0.6);
-    border-color: #5865F2;
+    border-color: rgb(88, 101, 242);
 }
 
 /* Reddit */
 .redes-sociales:nth-child(7):hover {
-    background: #FF4500;
+    background: rgb(255, 69, 0);
     box-shadow: 0 10px 30px rgba(255, 69, 0, 0.6);
-    border-color: #FF4500;
+    border-color: rgb(255, 69, 0);
+}
+
+@keyframes tituloGradiente {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -255,4 +278,3 @@ footer a:hover {
         padding: 15px;
     }
 }
-
